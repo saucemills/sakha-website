@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #070484;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.headerBrand {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  padding-left: 3.5em;
+}
+
+.headerBrandName {
+  font-size: 2.6em;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  list-style: none;
+  padding-right: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+}
+
+.nav ul li {
+  font-size: 1.5em;
+  padding-right: 2em;
+}
+
+.headerCourseButton {
+  font-family: 'Amiko', sans-serif;
+  font-size: 1.5em;
+  height: 2.5em;
+  background-color: #070484;
+  color: white;
+  border: 3px solid white;
+  border-radius: 10px;
+}
