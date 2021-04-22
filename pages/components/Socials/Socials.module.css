@@ -1,6 +1,43 @@
 .SocialsContainer {
   display: flex;
   width: 80%;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  color: #030098;
+  padding-bottom: 2em;
+}
+
+.SocialsCard {
+  cursor: pointer;
+  margin: 1em;
+  width: 33%;
+  border-radius: 10px;
+  border: 2px solid #00a3ff;
+}
+
+.SocialsCard p {
+  font-size: 1.8em;
+  padding: 0.5em;
+  letter-spacing: 1px;
+}
+
+.SocialsLogo {
+  display: flex;
+  margin: 0 auto;
+  width: 9em;
+  height: auto;
+  color: #030098;
+}
+
+.SocialsLogo:hover {
+  color: #00a3ff;
+}
+
+.SocialsLogoTikTok {
+  width: 6.5em;
+  padding-top: 1em;
+}
+
+.SocialsLogoFacebook {
+  width: 8em;
+  padding-top: 0.8em;
 }

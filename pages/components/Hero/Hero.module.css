@@ -16,10 +16,11 @@
   border-radius: 15px;
   width: 28em;
   margin-left: 12em;
+  padding: 1em;
 }
 
 .ActionText {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #030098;
   margin: 0;
 }
@@ -33,9 +34,14 @@
 }
 
 .ActionTextBlue {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #00a3ff;
   margin: 0.5em auto;
+}
+
+.ButtonsContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .storyButton {
@@ -43,7 +49,7 @@
   border: 3px solid #00a3ff;
   color: #030098;
   border-radius: 5px;
-  font-size: 1.5em;
+  font-size: 1.6em;
   margin: 1em;
   padding: 0.3em;
 }
@@ -52,6 +58,6 @@
   background: #070484;
   border-radius: 15px;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.6em;
   padding: 0.4em;
 }
