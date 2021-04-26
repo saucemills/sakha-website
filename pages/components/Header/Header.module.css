@@ -54,6 +54,38 @@
   border-radius: 10px;
 }
 
+.hamburgerButton {
+  padding: 1em;
+}
+
+.menuIcon {
+  cursor: pointer;
+  color: #fff;
+  width: 2em;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #070484;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.mobileNav ul {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  align-items: center;
+  list-style: none;
+  padding-right: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+}
+
 @media screen and (min-width: 1200px) {
   .headerBrandName {
     font-size: 3.2em;
@@ -67,5 +99,13 @@
 
   .nav {
     display: flex;
+  }
+
+  .hamburgerButton {
+    display: none;
+  }
+
+  .mobileNav {
+    display: none;
   }
 }
