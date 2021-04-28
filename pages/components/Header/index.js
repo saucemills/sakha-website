@@ -1,33 +1,46 @@
 import styles from './Header.module.css'
-import ResponsiveMenu from 'react-responsive-navbar'
+import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    setMenuOpen(!menuOpen)
+  }
+
   return (
-    <div className={styles.header}>
-      <div className={styles.headerBrand}>
-        <h1 className={styles.headerBrandName}>NICHOLAS SAKHA</h1>
-      </div>
-      <ResponsiveMenu
-        menuOpenButton={
-          <FontAwesomeIcon icon={faBars} className={styles.menuIcon} />
-        }
-        menuCloseButton={
-          <FontAwesomeIcon icon={faBars} className={styles.menuIcon} />
-        }
-        changeMenuOn='1200px'
-        largeMenuClassName={styles.nav}
-        smallMenuClassName={styles.mobileNav}
-        menu={
+    <>
+      <div className={styles.header}>
+        <div className={styles.headerBrand}>
+          <h1 className={styles.headerBrandName}>NICHOLAS SAKHA</h1>
+          {menuOpen && (
+            <nav className={styles.mobileNav}>
+              <ul>
+                <li>ABOUT ME</li>
+                <li>CONTACT</li>
+                <button className={styles.headerCourseButton}>MY COURSE</button>
+              </ul>
+            </nav>
+          )}
+        </div>
+        <nav className={styles.nav}>
           <ul>
-            <li>ABOUT</li>
+            <li>ABOUT ME</li>
             <li>CONTACT</li>
-            <button className={styles.headerCourseButton}>COURSE</button>
+            <button className={styles.headerCourseButton}>MY COURSE</button>
           </ul>
-        }
-      />
-    </div>
+        </nav>
+        <div className={styles.hamburgerButton} onClick={handleClick}>
+          <FontAwesomeIcon
+            icon={menuOpen ? faTimes : faBars}
+            className={styles.menuIcon}
+          />
+        </div>
+      </div>
+    </>
   )
 }
 
